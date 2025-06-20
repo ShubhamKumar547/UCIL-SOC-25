@@ -1,0 +1,46 @@
+name: Auto Assign on /assign
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  assign-if-eligible:
+    runs-on: ubuntu-latest
+
+    if: github.event.issue.pull_request == null && startsWith(github.event.comment.body, '/assign')
+    
+    permissions:
+      issues: write  # needed to assign
+      contents: read
+
+    steps:
+      - name: Get commenter username
+        id: user
+        run: echo "user=${{ github.event.comment.user.login }}" >> $GITHUB_OUTPUT
+
+      - name: Check number of open issues assigned to user
+        id: check
+        run: |
+          USER="${{ steps.user.outputs.user }}"
+          echo "Checking open issues assigned to @$USER..."
+
+          COUNT=$(gh issue list --assignee "$USER" --state open --json number --jq 'length')
+          echo "Assigned open issues: $COUNT"
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Assign user if eligible
+        if: steps.check.outputs.count < 2
+        run: |
+          gh issue edit ${{ github.event.issue.number }} --add-assignee "${{ steps.user.outputs.user }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Comment not eligible
+        if: steps.check.outputs.count >= 2
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "⚠️ You already have 2 or more open issues assigned. Finish those first!"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
