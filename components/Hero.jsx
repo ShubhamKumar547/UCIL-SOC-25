@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="relative w-full h-[400px] sm:h-[500px] flex items-center justify-center text-center">
-      {/* Fondo con imagen */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -10,11 +10,9 @@ export default function Hero() {
         }}
         aria-hidden="true"
       />
-      
-      {/* Overlay oscuro */}
+      {/* Overlay*/}
       <div className="absolute inset-0 bg-black/80" aria-hidden="true" />
-      
-      {/* Contenido */}
+      {/* Content*/}
       <div className="relative z-10 max-w-3xl px-4">
         <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
           Welcome to UCIL
