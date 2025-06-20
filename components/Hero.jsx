@@ -1,30 +1,34 @@
 export default function Hero() {
   return (
-    <section className="relative w-full h-[400px] sm:h-[500px] flex items-center justify-center text-center">
+    <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[420px] sm:h-[540px] flex items-center justify-center text-center overflow-hidden">
       {/* Background */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80')",
+          backgroundImage: "url('/background-hero.jpg')",
         }}
         aria-hidden="true"
       />
-      {/* Overlay*/}
-      <div className="absolute inset-0 bg-black/80" aria-hidden="true" />
-      {/* Content*/}
-      <div className="relative z-10 max-w-3xl px-4">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-          Welcome to UCIL
+      {/* Overlay */}
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/70 dark:from-black/95 dark:via-black/80 dark:to-black/90"
+        aria-hidden="true"
+      />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl px-4 mt-16 sm:mt-24">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
+          Empowering India’s Nuclear Future
         </h1>
-        <p className="text-lg sm:text-xl text-white mb-8">
-          UCIL is dedicated to empowering innovation, technology, and collaboration.
+        <p className="text-lg sm:text-2xl text-white mb-12 drop-shadow">
+          UCIL is committed to safe and sustainable uranium mining, powering the
+          nation’s energy needs with responsibility and innovation.
         </p>
         <a
-          href="#get-started"
-          className="inline-block bg-white text-black font-semibold px-6 py-3 rounded hover:bg-transparent hover:text-white hover:border-white transition border border-transparent"
+          href="#mission"
+          className="inline-block bg-white text-black font-semibold px-10 py-3 rounded-full shadow-xl border-2 border-white transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-white/50 hover:bg-transparent hover:text-white hover:border-white hover:scale-105 hover:shadow-2xl mt-8"
         >
-          Contact Us
+          Learn About Our Mission
         </a>
       </div>
     </section>
