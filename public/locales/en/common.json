@@ -8,5 +8,28 @@
   "navbar_head": "UCIL",
   "navbar_home": "Home",
   "navbar_grienvance": "Grievance",
-  "navbar_stories": "Stories"
+  "navbar_stories": "Stories",
+
+
+  "grievance_heading": "Raise Your Voice",
+  "grievance_subtext": "Share your grievance regarding UCIL’s operations.All entries are recorded anonymously and used only for awareness and advocacy.",
+  "grievance_submitted" : "Grievance Submitted!",
+  "grievance_thanks": "We will try to resolve your grievance as soon as possible.",
+  "grievance_id": "Your grievance ID is:",
+  "form_name": "Full Name",
+  "form_email": "Email or Phone",
+  "form_location": "Location",
+  "form_description": "Describe your grievance...",
+  "form_category": "Select Category",
+  "cat_health": "Health",
+  "cat_water": "Water",
+  "cat_displacement": "Displacement",
+  "cat_harassment": "Harassment",
+  "cat_academic": "Academic",
+  "form_urgency": "Select Urgency",
+  "urgency_low": "Low",
+  "urgency_moderate": "Moderate",
+  "urgency_high": "High",
+  "form_upload": "Upload Evidence (optional)",
+  "form_submit": "Submit Grievance"
 }
