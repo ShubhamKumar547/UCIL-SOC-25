@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
               : "text-gray-400 dark:text-gray-200"
           }`}
         >
-          HI
+          हिन्दी
         </span>
       </div>
 
