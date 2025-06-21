@@ -4,5 +4,9 @@
   "contact": "Contact Us",
   "hero_title": "Welcome to Our Platform",
   "hero_description": "Empowering communities through technology and innovation.",
-  "hero_cta": "Learn More"
+  "hero_cta": "Learn More",
+  "navbar_head": "UCIL",
+  "navbar_home": "Home",
+  "navbar_grienvance": "Grievance",
+  "navbar_stories": "Stories"
 }
