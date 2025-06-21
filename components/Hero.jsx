@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({ t }) {
   return (
     <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[420px] sm:h-[540px] flex items-center justify-center text-center overflow-hidden">
       {/* Background */}
@@ -18,17 +18,16 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-4 mt-16 sm:mt-24">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
-          Empowering India’s Nuclear Future
+          {t.hero_title}
         </h1>
         <p className="text-lg sm:text-2xl text-white mb-12 drop-shadow">
-          UCIL is committed to safe and sustainable uranium mining, powering the
-          nation’s energy needs with responsibility and innovation.
+          {t.hero_description}
         </p>
         <a
           href="#mission"
           className="inline-block bg-white text-black font-semibold px-10 py-3 rounded-full shadow-xl border-2 border-white transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-white/50 hover:bg-transparent hover:text-white hover:border-white hover:scale-105 hover:shadow-2xl mt-8"
         >
-          Learn About Our Mission
+          {t.hero_cta}
         </a>
       </div>
     </section>
