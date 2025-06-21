@@ -8,5 +8,29 @@
   "navbar_head": "यूसीआईएल",
   "navbar_home": "होम",
   "navbar_grienvance": "शिकायत",
-  "navbar_stories": "कहानियाँ"
+  "navbar_stories": "कहानियाँ",
+
+
+ 
+  "grievance_heading": "अपनी आवाज उठाएं",
+  "grievance_subtext": "यूसीआईएल के संचालन से संबंधित अपनी शिकायत साझा करें। सभी प्रविष्टियाँ गुमनाम रूप से दर्ज की जाती हैं और केवल जागरूकता और वकालत के लिए उपयोग की जाती हैं।",
+  "grievance_submitted" : "शिकायत प्रस्तुत की गई!",
+  "grievance_thanks": "हम आपकी शिकायत को जल्द से जल्द हल करने का प्रयास करेंगे।",
+  "grievance_id": "आपकी शिकायत आईडी है:",
+  "form_name": "पूरा नाम",
+  "form_email": "ईमेल या फ़ोन",
+  "form_location": "स्थान",
+  "form_description": "अपनी शिकायत का वर्णन करें...",
+  "form_category": "श्रेणी चुनें",
+  "cat_health": "स्वास्थ्य",
+  "cat_water": "पानी",
+  "cat_displacement": "विस्थापन",
+  "cat_harassment": "उत्पीड़न",
+  "cat_academic": "शैक्षणिक",
+  "form_urgency": "अत्यावश्यकता चुनें",
+  "urgency_low": "कम",
+  "urgency_moderate":"मध्यम",
+  "urgency_high": "उच्च",
+  "form_upload":  "साक्ष्य अपलोड करें (वैकल्पिक)",
+  "form_submit": "शिकायत सबमिट करें"
 }
