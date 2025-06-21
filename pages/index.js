@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar t={t} />
       <div className="p-8 min-h-screen flex flex-col">
         <Hero t={t} />
       </div>
