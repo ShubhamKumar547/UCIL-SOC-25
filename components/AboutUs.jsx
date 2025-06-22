@@ -12,22 +12,22 @@ const AboutUCIL = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="p-6 bg-[#26282A] text-white rounded-md space-y-5">
+      <div className="p-6 bg-[#1f2937] text-white rounded-md space-y-5">
         <h1 className="text-xl font-bold">{t.title}</h1>
 
         <div>
           <h3 className="text-lg font-medium mb-1">{t.overview.title}</h3>
-          <p className="text-sm">{t.overview.description}</p>
+          <p className="font-normal">{t.overview.description}</p>
         </div>
 
         <div>
           <h3 className="text-lg font-medium mb-1">{t.mission.title}</h3>
-          <p className="text-sm">{t.mission.description}</p>
+          <p className="font-normal">{t.mission.description}</p>
         </div>
 
         <div>
           <h3 className="text-lg font-medium mb-1">{t.operations.title}</h3>
-          <ul className="list-disc pl-5 text-sm space-y-1">
+          <ul className="list-disc pl-5 font-normal space-y-1">
             {t.operations.items.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -35,7 +35,7 @@ const AboutUCIL = () => {
         </div>
 
         <div className="pt-2">
-          <button className="px-5 py-1.5 bg-white text-black font-medium rounded hover:bg-gray-200 transition-colors text-sm">
+          <button className="px-5 py-1.5 bg-white text-black font-normal font-extrabold rounded hover:bg-gray-200 transition-colors text-sm hover:cursor-pointer">
             {t.contactButton}
           </button>
         </div>

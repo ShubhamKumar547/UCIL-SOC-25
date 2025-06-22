@@ -1,0 +1,36 @@
+
+{
+  "waterContamination": {
+    "title": "WATER CONTAMINATION",
+    "value": "12.5 ppm",
+    "trend": 8.2
+  },
+  "radiationExposure": {
+    "title": "RADIATION EXPOSURE",
+    "value": "4.3 mSv",
+    "trend": -2.1
+  },
+  "airPollution": {
+    "title": "AIR POLLUTION",
+    "value": "156 AQI",
+    "trend": 5.7
+  },
+  "chemicalToxicity": {
+    "title": "CHEMICAL TOXICITY",
+    "value": "8.9 TUI",
+    "trend": 3.4
+  },
+  "landDegradation": {
+    "title": "LAND DEGRADATION",
+    "value": "23.7%",
+    "trend": 1.2
+  },
+  "radonLevel": {
+    "title": "RADON LEVEL",
+    "value": "3.1 pCi/L",
+    "trend": -1.5
+  },
+  "sinceLastMonth": "Since last month",
+  "sinceLastWeek": "Since last week",
+  "sinceYesterday": "Since yesterday"
+}

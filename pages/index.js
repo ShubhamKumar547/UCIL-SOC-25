@@ -7,6 +7,7 @@ import EnvironmentalRights from "@/components/Rights";
 import ren from "../public/locales/en/rights.json";
 import rhi from "../public/locales/hi/rights.json";
 import AboutUCIL from "@/components/AboutUs";
+import EnvironmentalStatsCards from "@/components/Environmental";
 
 const translations = { en, hi };
 const rights_translation = { ren, rhi };
@@ -23,14 +24,20 @@ export default function Home() {
     <>
       <div className="box-border">
         <Navbar t={t} />
-        <div className="box-border  flex flex-col">
+        <div className="max-w-7xl mx-auto px-4 ">
           <Hero t={t} />
         </div>
+
+        {/* <div className="box-border  flex flex-col">
+          
+        </div> */}
         <div>
           <AboutUCIL />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 py-8"></div>
+        <div className="max-w-7xl mx-auto px-4 ">
+          <EnvironmentalStatsCards />
+        </div>
         <EnvironmentalRights t={rt} />
       </div>
     </>
