@@ -22,23 +22,22 @@ export default function Home() {
 
   return (
     <>
-      <div className="box-border">
+      <div className="box-border bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <Navbar t={t} />
-        <div className="max-w-7xl mx-auto px-4 ">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <Hero t={t} />
         </div>
 
-        {/* <div className="box-border  flex flex-col">
-          
-        </div> */}
-        <div>
+        <div className="py-8">
           <AboutUCIL />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 ">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <EnvironmentalStatsCards />
         </div>
-        <EnvironmentalRights t={rt} />
+        <div className="py-8">
+          <EnvironmentalRights t={rt} />
+        </div>
       </div>
     </>
   );
