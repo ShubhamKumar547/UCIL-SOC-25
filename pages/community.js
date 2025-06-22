@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import en from "../public/locales/en/common.json";
 import hi from "../public/locales/hi/common.json";
 import CommunityDemands from "@/components/Demands";
-import CommunityTestimonials from "@/components/Testimonials";
+
 
 const community = () => {
   const translations = { en, hi };
@@ -19,9 +19,7 @@ const community = () => {
       <div className="max-w-7xl mx-auto px-4  pt-2 ">
         <CommunityDemands />
       </div>
-      <div className="max-w-7xl mx-auto px-4  pt-2 ">
-        <CommunityTestimonials />
-      </div>
+      
     </>
   );
 };

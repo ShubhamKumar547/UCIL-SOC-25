@@ -11,7 +11,7 @@ const EnvironmentalStatsCards = () => {
 
   // Common classes for improvement and smooth transitions
   const cardClass =
-    "p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-md transition-colors duration-300 ease-in-out";
+    "pt-6 pb-6 bg-white dark:bg-[var(--color-gray-800)] border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-md transition-colors duration-300 ease-in-out";
   const headingClass = "mb-2 text-lg font-bold text-gray-900 dark:text-white";
   const valueClass = "font-normal text-xl text-gray-700 dark:text-gray-300";
   const subtitleClass = "font-normal text-gray-600 dark:text-gray-400";

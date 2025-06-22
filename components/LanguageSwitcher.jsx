@@ -34,7 +34,7 @@ export default function LanguageSwitcher() {
         <span
           className={`text-sm font-semibold transition-colors duration-300 ${
             router.locale === "en"
-              ? "text-gray-100 dark:text-gray-100"
+              ? "text-gray-100 dark:text-blue"
               : "text-gray-200"
           }`}
         >
