@@ -30,9 +30,8 @@ export default function Home() {
           <AboutUCIL />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 py-8">
-      </div> 
-         <EnvironmentalRights t={rt}/>
+        <div className="max-w-7xl mx-auto px-4 py-8"></div>
+        <EnvironmentalRights t={rt} />
       </div>
     </>
   );
