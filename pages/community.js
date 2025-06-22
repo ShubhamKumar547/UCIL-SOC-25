@@ -10,20 +10,18 @@ const community = () => {
   const translations = { en, hi };
   const { locale } = useRouter();
   const t = translations[locale] || translations.en;
+
   return (
     <>
       <div>
         <Navbar t={t} />
       </div>
       <div className="max-w-7xl mx-auto px-4  pt-2 ">
-        <CommunityDemands/>
+        <CommunityDemands />
       </div>
       <div className="max-w-7xl mx-auto px-4  pt-2 ">
-        <CommunityTestimonials/>
+        <CommunityTestimonials />
       </div>
-
-
-
     </>
   );
 };

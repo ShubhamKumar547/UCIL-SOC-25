@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export default function GrievanceForm({ t }) {
@@ -29,14 +28,17 @@ export default function GrievanceForm({ t }) {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-emerald-50 dark:bg-gray-900">
-        <h2 className="text-2xl font-bold text-emerald-700 dark:text-emerald-400 mb-2 text-center">
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900">
+        <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4 text-center">
           ✅ {t?.grievance_submitted || "Grievance Submitted!"}
         </h2>
         <p className="text-gray-700 dark:text-gray-300 text-center text-sm">
-          {t?.grievance_thanks || "We will try to resolve your grievance as soon as possible."}{" "}
+          {t?.grievance_thanks ||
+            "We will try to resolve your grievance as soon as possible."}{" "}
           {t?.grievance_id || "Your grievance ID is:"}{" "}
-          <span className="text-blue-600 dark:text-blue-400 font-semibold">UCIL-XYZ123</span>
+          <span className="text-blue-600 dark:text-blue-400 font-semibold">
+            UCIL-XYZ123
+          </span>
         </p>
       </div>
     );
@@ -45,7 +47,7 @@ export default function GrievanceForm({ t }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-xl w-full max-w-xl mx-auto space-y-5 border border-gray-200 dark:border-gray-700"
+      className="bg-gray-100 dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-lg w-full max-w-xl mx-auto space-y-6 border border-gray-200 dark:border-gray-700"
     >
       <input
         type="text"
@@ -53,7 +55,7 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_name || "Full Name"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:bg-gray-700 dark:text-white"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
       />
       <input
         type="text"
@@ -61,7 +63,7 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_email || "Email or Phone"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:bg-gray-700 dark:text-white"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
       />
       <input
         type="text"
@@ -69,33 +71,37 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_location || "Location"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:bg-gray-700 dark:text-white"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
       />
       <textarea
         name="description"
         required
         placeholder={t?.form_description || "Describe your grievance..."}
         onChange={handleChange}
-        className="w-full px-4 py-3 h-32 resize-none border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:bg-gray-700 dark:text-white"
+        className="w-full px-4 py-3 h-32 resize-none border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
       />
       <select
         name="category"
         required
         onChange={handleChange}
-        className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:text-white"
+        className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:text-gray-100"
       >
         <option value="">{t?.form_category || "Select Category"}</option>
         <option value="health">{t?.cat_health || "Health"}</option>
         <option value="water">{t?.cat_water || "Water"}</option>
-        <option value="displacement">{t?.cat_displacement || "Displacement"}</option>
-        <option value="harassment">{t?.cat_harassment || "Harassment"}</option>
+        <option value="displacement">
+          {t?.cat_displacement || "Displacement"}
+        </option>
+        <option value="harassment">
+          {t?.cat_harassment || "Harassment"}
+        </option>
         <option value="academic">{t?.cat_academic || "Academic"}</option>
       </select>
       <select
         name="urgency"
         required
         onChange={handleChange}
-        className="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800 dark:text-white"
+        className="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:text-gray-100"
       >
         <option value="">{t?.form_urgency || "Select Urgency"}</option>
         <option value="low">{t?.urgency_low || "Low"}</option>
@@ -110,12 +116,12 @@ export default function GrievanceForm({ t }) {
           type="file"
           name="evidence"
           onChange={handleChange}
-          className="w-full px-2 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white"
+          className="w-full px-2 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-gray-100"
         />
       </div>
       <button
         type="submit"
-        className="bg-indigo-800 hover:bg-indigo-900 text-white font-semibold py-3 px-6 rounded-lg w-full shadow-md transition"
+        className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full shadow-md transition focus:outline-none focus:ring focus:ring-indigo-400"
       >
         {t?.form_submit || "Submit Grievance"}
       </button>

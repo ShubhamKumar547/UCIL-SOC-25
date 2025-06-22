@@ -1,4 +1,3 @@
-// components/EnvironmentalStatsCards.jsx
 import React from "react";
 import env_en from "../public/locales/en/envimpacts.json";
 import env_hi from "../public/locales/hi/envimpacts.json";
@@ -8,34 +7,31 @@ const EnvironmentalStatsCards = () => {
   const { locale } = useRouter();
   const env_translation = { env_en, env_hi };
   const lang = locale === "hi" ? "env_hi" : "env_en";
-
   const t = env_translation[lang] || env_translation.en;
 
-  return (
-    <div className="w-full px-0">
-        <div className="text-2xl font-bold mb-2 text-black ">
-            Environmental-Health Impacts
+  // Common classes for improvement and smooth transitions
+  const cardClass =
+    "p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow hover:shadow-md transition-colors duration-300 ease-in-out";
+  const headingClass = "mb-2 text-lg font-bold text-gray-900 dark:text-white";
+  const valueClass = "font-normal text-xl text-gray-700 dark:text-gray-300";
+  const subtitleClass = "font-normal text-gray-600 dark:text-gray-400";
+  const trendClass = (trend) =>
+    `${trend >= 0 ? "text-green-500" : "text-red-500"}`;
 
-        </div>
-         
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-       
+  return (
+    <div className="w-full p-4">
+      <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+        Environmental-Health Impacts
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Water Contamination Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.waterContamination.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.waterContamination.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.waterContamination.trend >= 0
-                  ? "text-green-500"
-                  : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.waterContamination.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.waterContamination.trend)}>
               {t.waterContamination.trend}%
             </span>{" "}
             {t.sinceLastMonth}
@@ -43,21 +39,13 @@ const EnvironmentalStatsCards = () => {
         </div>
 
         {/* Radiation Exposure Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.radiationExposure.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.radiationExposure.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.radiationExposure.trend >= 0
-                  ? "text-green-500"
-                  : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.radiationExposure.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.radiationExposure.trend)}>
               {t.radiationExposure.trend}%
             </span>{" "}
             {t.sinceLastWeek}
@@ -65,19 +53,13 @@ const EnvironmentalStatsCards = () => {
         </div>
 
         {/* Air Pollution Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.airPollution.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.airPollution.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.airPollution.trend >= 0 ? "text-green-500" : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.airPollution.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.airPollution.trend)}>
               {t.airPollution.trend}%
             </span>{" "}
             {t.sinceYesterday}
@@ -85,21 +67,13 @@ const EnvironmentalStatsCards = () => {
         </div>
 
         {/* Chemical Toxicity Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.chemicalToxicity.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.chemicalToxicity.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.chemicalToxicity.trend >= 0
-                  ? "text-green-500"
-                  : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.chemicalToxicity.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.chemicalToxicity.trend)}>
               {t.chemicalToxicity.trend}%
             </span>{" "}
             {t.sinceLastMonth}
@@ -107,19 +81,13 @@ const EnvironmentalStatsCards = () => {
         </div>
 
         {/* Land Degradation Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.landDegradation.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.landDegradation.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.landDegradation.trend >= 0 ? "text-green-500" : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.landDegradation.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.landDegradation.trend)}>
               {t.landDegradation.trend}%
             </span>{" "}
             {t.sinceLastMonth}
@@ -127,19 +95,13 @@ const EnvironmentalStatsCards = () => {
         </div>
 
         {/* Radon Level Card */}
-        <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h3 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className={cardClass}>
+          <h3 className={headingClass}>
             {t.radonLevel.title}
           </h3>
-          <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
-            {t.radonLevel.value}
-          </p>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            <span
-              className={
-                t.radonLevel.trend >= 0 ? "text-green-500" : "text-red-500"
-              }
-            >
+          <p className={valueClass}>{t.radonLevel.value}</p>
+          <p className={subtitleClass}>
+            <span className={trendClass(t.radonLevel.trend)}>
               {t.radonLevel.trend}%
             </span>{" "}
             {t.sinceLastWeek}
