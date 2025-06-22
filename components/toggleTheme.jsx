@@ -13,7 +13,7 @@ const ThemeToggle = () => {
         <button
             type="button"
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            className={`w-8 h-8 rounded-full p-2 transition-all duration-300 ${
+            className={`w-8 h-8 rounded-full p-2 transition-all duration-300 hover:cursor-pointer ${
                 theme === 'dark'
                     ? 'bg-gray-700 text-yellow-400 hover:bg-gray-600'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
