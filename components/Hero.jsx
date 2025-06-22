@@ -11,7 +11,7 @@ export default function Hero({ t }) {
       />
       {/* Overlay */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/70 dark:from-black/95 dark:via-black/80 dark:to-black/90"
+        className="absolute "
         aria-hidden="true"
       />
 

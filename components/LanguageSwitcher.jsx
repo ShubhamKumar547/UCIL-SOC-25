@@ -36,7 +36,7 @@ export default function LanguageSwitcher() {
           className={`text-xs font-bold ${
             router.locale === "en"
               ? "text-black dark:text-white"
-              : "text-gray-200 dark:text-gray-400"
+              : "text-gray-400 dark:text-gray-200"
           }`}
         >
           EN

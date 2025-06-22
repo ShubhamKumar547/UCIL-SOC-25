@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUCIL = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="p-6 bg-black text-white rounded-md space-y-5">
+      <div className="p-6 bg-[#26282A] text-white rounded-md space-y-5">
         <h1 className="text-xl font-bold">About Uranium Corporation of India Limited (UCIL)</h1>
         
         <div>

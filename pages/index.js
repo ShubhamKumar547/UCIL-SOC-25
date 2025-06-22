@@ -6,28 +6,34 @@ import Navbar from "@/components/Navbar";
 import EnvironmentalRights from "@/components/Rights";
 import ren from "../public/locales/en/rights.json";
 import rhi from "../public/locales/hi/rights.json";
-
-
+import AboutUCIL from "@/components/AboutUs";
 
 const translations = { en, hi };
-const rights_translation={ren,rhi};
+const rights_translation = { ren, rhi };
 
 export default function Home() {
   const { locale } = useRouter();
   const t = translations[locale] || translations.en;
 
-  const lang=locale==="hi"?"rhi":"ren";
+  const lang = locale === "hi" ? "rhi" : "ren";
 
-
-  const rt=rights_translation[lang] || translations.en;
+  const rt = rights_translation[lang] || translations.en;
 
   return (
     <>
-      <Navbar t={t} />
-      <div className="box-border min-h-screen flex flex-col">
-        <Hero t={t} />
+      <div className="box-border">
+        <Navbar t={t} />
+        <div className="box-border  flex flex-col">
+          <Hero t={t} />
+        </div>
+        <div>
+          <AboutUCIL />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 py-8">
+      </div> 
+         <EnvironmentalRights t={rt}/>
       </div>
-      <EnvironmentalRights t={rt}/>
     </>
   );
 }
