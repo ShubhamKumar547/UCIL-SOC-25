@@ -9,8 +9,8 @@ export default function Navbar({ t }) {
 
   const tabs = [
     { path: "/", key: "navbar_home" },
-    { path: "/grievance", key: "navbar_grienvance" },
-    { path: "/stories", key: "navbar_stories" }
+    { path: "/grievance", key: "navbar_grievance" },
+    { path: "/community", key: "navbar_stories" }
   ];
 
   const handleTabClick = (path) => {
