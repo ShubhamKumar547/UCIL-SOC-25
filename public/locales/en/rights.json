@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "title": "Environmental & Forest Rights",
+    "subtitle": "Comprehensive overview of legal rights under various environmental protection, forest conservation, and resettlement acts in India."
+  },
+  "rights": [
+    {
+      "id": "forest_rights_act",
+      "title": "Forest Rights Act, 2006",
+      "icon": "🌳",
+      "content": [
+        "Recognizes rights of forest-dwelling communities to land and other resources",
+        "Provides for individual forest rights (IFR) and community forest rights (CFR)",
+        "Ensures right to hold and live in forest land for habitation or self-cultivation",
+        "Grants rights to ownership, access to collect, use and dispose of minor forest produce"
+      ]
+    },
+    {
+      "id": "environment_protection_act",
+      "title": "Environment Protection Act, 1986",
+      "icon": "🌍",
+      "content": [
+        "Right to a clean and healthy environment",
+        "Right to information about environmental hazards",
+        "Right to participate in environmental decision-making processes",
+        "Right to seek compensation for environmental damage"
+      ]
+    },
+    {
+      "id": "wildlife_protection_act",
+      "title": "Wildlife Protection Act, 1972",
+      "icon": "🦁",
+      "content": [
+        "Right to protection of wildlife and their habitats",
+        "Restrictions on hunting with exceptions for certain communities",
+        "Right to be consulted in declaration of protected areas",
+        "Provisions for compensation in case of wildlife damage to crops/livestock"
+      ]
+    },
+    {
+      "id": "land_acquisition_act",
+      "title": "Land Acquisition & Resettlement Acts",
+      "icon": "🏡",
+      "content": [
+        "Right to fair compensation and transparency in land acquisition",
+        "Right to rehabilitation and resettlement for displaced persons",
+        "Right to hearing objections to the acquisition",
+        "Right to social impact assessment before acquisition"
+      ]
+    },
+    {
+      "id": "forest_dwellers_act",
+      "title": "Scheduled Tribes and Other Traditional Forest Dwellers Act",
+      "icon": "👥",
+      "content": [
+        "Right to protect, regenerate or conserve community forest resource",
+        "Right to intellectual property and traditional knowledge",
+        "Right to in situ rehabilitation including alternative land",
+        "Right to development facilities in case of displacement"
+      ]
+    }
+  ],
+  "legalAssistance": {
+    "title": "Need Legal Assistance?",
+    "description": "If you believe your environmental or forest rights have been violated, consult with a legal expert specializing in environmental law.",
+    "buttonText": "Contact an Expert"
+  }
+}

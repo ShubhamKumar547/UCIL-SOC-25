@@ -1,0 +1,36 @@
+
+{
+  "waterContamination": {
+    "title": "जल प्रदूषण",
+    "value": "12.5 पीपीएम",
+    "trend": 8.2
+  },
+  "radiationExposure": {
+    "title": "विकिरण एक्सपोजर",
+    "value": "4.3 एमएसवी",
+    "trend": -2.1
+  },
+  "airPollution": {
+    "title": "वायु प्रदूषण",
+    "value": "156 एक्यूआई",
+    "trend": 5.7
+  },
+  "chemicalToxicity": {
+    "title": "रासायनिक विषाक्तता",
+    "value": "8.9 टीयूआई",
+    "trend": 3.4
+  },
+  "landDegradation": {
+    "title": "भूमि अवक्रमण",
+    "value": "23.7%",
+    "trend": 1.2
+  },
+  "radonLevel": {
+    "title": "रेडॉन स्तर",
+    "value": "3.1 पीसीआई/एल",
+    "trend": -1.5
+  },
+  "sinceLastMonth": "पिछले महीने से",
+  "sinceLastWeek": "पिछले सप्ताह से",
+  "sinceYesterday": "कल से"
+}

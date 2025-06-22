@@ -1,0 +1,20 @@
+{
+  "title": "About Uranium Corporation of India Limited (UCIL)",
+  "overview": {
+    "title": "Company Overview",
+    "description": "Uranium Corporation of India Limited (UCIL) is a Public Sector Enterprise under the Department of Atomic Energy, Government of India. Established in 1967, we are responsible for uranium mining and processing to support India's nuclear power program."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To achieve self-sufficiency in uranium production through sustainable mining practices, technological innovation, and commitment to safety and environmental protection."
+  },
+  "operations": {
+    "title": "Key Operations",
+    "items": [
+      "Uranium mining operations in Jharkhand and Andhra Pradesh",
+      "Ore processing and uranium concentrate production",
+      "Exploration of new uranium reserves"
+    ]
+  },
+  "contactButton": "Contact UCIL"
+}
