@@ -52,7 +52,7 @@ const EnvironmentalStatsCards = () => {
           </p>
         </div>
 
-        {/* Air Pollution Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.airPollution.title}
@@ -66,7 +66,7 @@ const EnvironmentalStatsCards = () => {
           </p>
         </div>
 
-        {/* Chemical Toxicity Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.chemicalToxicity.title}
@@ -80,7 +80,7 @@ const EnvironmentalStatsCards = () => {
           </p>
         </div>
 
-        {/* Land Degradation Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.landDegradation.title}
@@ -94,7 +94,7 @@ const EnvironmentalStatsCards = () => {
           </p>
         </div>
 
-        {/* Radon Level Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.radonLevel.title}

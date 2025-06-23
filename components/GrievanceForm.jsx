@@ -28,7 +28,7 @@ export default function GrievanceForm({ t }) {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900">
+      <div className=" bg-white min-h-screen flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900 box-border">
         <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4 text-center">
           ✅ {t?.grievance_submitted || "Grievance Submitted!"}
         </h2>
@@ -47,7 +47,7 @@ export default function GrievanceForm({ t }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-gray-100 dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-lg w-full max-w-xl mx-auto space-y-6 border border-gray-200 dark:border-gray-700"
+      className=" bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl mx-auto bg-gray-100 dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-lg w-full max-w-xl mx-auto space-y-6 border border-gray-200 dark:border-gray-700"
     >
       <input
         type="text"
@@ -55,7 +55,7 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_name || "Full Name"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-300"
       />
       <input
         type="text"
@@ -63,7 +63,7 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_email || "Email or Phone"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-300"
       />
       <input
         type="text"
@@ -71,14 +71,14 @@ export default function GrievanceForm({ t }) {
         required
         placeholder={t?.form_location || "Location"}
         onChange={handleChange}
-        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
+        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-300"
       />
       <textarea
         name="description"
         required
         placeholder={t?.form_description || "Describe your grievance..."}
         onChange={handleChange}
-        className="w-full px-4 py-3 h-32 resize-none border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100"
+        className="w-full px-4 py-3 h-32 resize-none border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-400 dark:bg-gray-700 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-300"
       />
       <select
         name="category"
@@ -121,7 +121,7 @@ export default function GrievanceForm({ t }) {
       </div>
       <button
         type="submit"
-        className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full shadow-md transition focus:outline-none focus:ring focus:ring-indigo-400"
+        className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg w-full"
       >
         {t?.form_submit || "Submit Grievance"}
       </button>

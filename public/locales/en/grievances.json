@@ -1,0 +1,44 @@
+{
+  "grievanceStatusChecker": {
+    "title": "Grievance Status Checker",
+    "inputLabel": "Enter Grievance ID",
+    "placeholder": "e.g. GRV-123456",
+    "checkButton": "Check Status",
+    "errorNotFound": "No grievance found with this ID",
+    "grievanceIdLabel": "Grievance ID",
+    "dateLabel": "Date Submitted",
+    "categoryLabel": "Category",
+    "statusLabel": "Status",
+    "descriptionLabel": "Description",
+    "resolutionLabel": "Resolution",
+    "statusLabels": {
+      "pending": "Pending",
+      "in-progress": "In Progress",
+      "resolved": "Resolved"
+    }
+  },
+  "grievances": [
+    {
+      "id": "GRV-100001",
+      "date": "15/05/2023",
+      "category": "Health & Safety",
+      "status": "resolved",
+      "description": "Request for radiation safety equipment in Jaduguda mining area",
+      "resolution": "Equipment provided on 20/05/2023"
+    },
+    {
+      "id": "GRV-100002",
+      "date": "22/06/2023",
+      "category": "Water Contamination",
+      "status": "in-progress",
+      "description": "Complaint about water quality in Narwapahar village"
+    },
+    {
+      "id": "GRV-100003",
+      "date": "10/07/2023",
+      "category": "Employment",
+      "status": "pending",
+      "description": "Job application status inquiry for local candidate"
+    }
+  ]
+}
