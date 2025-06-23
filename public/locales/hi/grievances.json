@@ -1,0 +1,44 @@
+{
+  "grievanceStatusChecker": {
+    "title": "शिकायत स्थिति जांचकर्ता",
+    "inputLabel": "शिकायत आईडी दर्ज करें",
+    "placeholder": "जैसे GRV-123456",
+    "checkButton": "स्थिति जांचें",
+    "errorNotFound": "इस आईडी से कोई शिकायत नहीं मिली",
+    "grievanceIdLabel": "शिकायत आईडी",
+    "dateLabel": "प्रस्तुत करने की तिथि",
+    "categoryLabel": "श्रेणी",
+    "statusLabel": "स्थिति",
+    "descriptionLabel": "विवरण",
+    "resolutionLabel": "समाधान",
+    "statusLabels": {
+      "pending": "लंबित",
+      "in-progress": "प्रगति पर",
+      "resolved": "हल हो गई"
+    }
+  },
+  "grievances": [
+    {
+      "id": "GRV-100001",
+      "date": "15/05/2023",
+      "category": "स्वास्थ्य एवं सुरक्षा",
+      "status": "resolved",
+      "description": "जादूगोड़ा खनन क्षेत्र में विकिरण सुरक्षा उपकरण के लिए अनुरोध",
+      "resolution": "20/05/2023 को उपकरण प्रदान किया गया"
+    },
+    {
+      "id": "GRV-100002",
+      "date": "22/06/2023",
+      "category": "जल प्रदूषण",
+      "status": "in-progress",
+      "description": "नरवापहार गांव में जल की गुणवत्ता के बारे में शिकायत"
+    },
+    {
+      "id": "GRV-100003",
+      "date": "10/07/2023",
+      "category": "रोजगार",
+      "status": "pending",
+      "description": "स्थानीय उम्मीदवार के लिए नौकरी आवेदन स्थिति जांच"
+    }
+  ]
+}

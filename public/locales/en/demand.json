@@ -1,0 +1,31 @@
+{
+  "title": "Community Demands",
+  "subtitle": "Essential rights for communities near uranium mines",
+  "demands": [
+    {
+      "title": "Regular Health Audits",
+      "description": "Mandatory medical checkups every 6 months to monitor radiation effects"
+    },
+    {
+      "title": "Fair Compensation",
+      "description": "Financial support for health impacts and property damage"
+    },
+    {
+      "title": "Safe Drinking Water",
+      "description": "Advanced filtration systems for uranium-free water supply"
+    },
+    {
+      "title": "Environmental Monitoring",
+      "description": "Real-time public data on radiation and pollution levels"
+    },
+    {
+      "title": "Relocation Option",
+      "description": "Voluntary relocation with fair compensation packages"
+    },
+    {
+      "title": "Education Support",
+      "description": "Guaranteed education and employment opportunities"
+    }
+  ],
+  "cta": "Support Community"
+}

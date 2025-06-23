@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import en from "../public/locales/en/common.json";
 import hi from "../public/locales/hi/common.json";
+import CommunityDemands from "@/components/Demands";
+
 
 const community = () => {
   const translations = { en, hi };
@@ -10,9 +12,15 @@ const community = () => {
   const t = translations[locale] || translations.en;
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <Navbar t={t} />
-    </div>
+    <>
+      <div>
+        <Navbar t={t} />
+      </div>
+      <div className="max-w-7xl mx-auto px-4  pt-2 ">
+        <CommunityDemands />
+      </div>
+      
+    </>
   );
 };
 

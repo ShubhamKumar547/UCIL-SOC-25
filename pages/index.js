@@ -8,6 +8,7 @@ import ren from "../public/locales/en/rights.json";
 import rhi from "../public/locales/hi/rights.json";
 import AboutUCIL from "@/components/AboutUs";
 import EnvironmentalStatsCards from "@/components/Environmental";
+import MiningStats from "@/components/ProjectStatistics";
 
 const translations = { en, hi };
 const rights_translation = { ren, rhi };
@@ -34,6 +35,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-4 py-8">
           <EnvironmentalStatsCards />
+          <MiningStats/>
         </div>
         <div className="py-8">
           <EnvironmentalRights t={rt} />
