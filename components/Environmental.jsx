@@ -24,7 +24,7 @@ const EnvironmentalStatsCards = () => {
         Environmental-Health Impacts
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Water Contamination Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.waterContamination.title}
@@ -38,7 +38,7 @@ const EnvironmentalStatsCards = () => {
           </p>
         </div>
 
-        {/* Radiation Exposure Card */}
+        
         <div className={cardClass}>
           <h3 className={headingClass}>
             {t.radiationExposure.title}
