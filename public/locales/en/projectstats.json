@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Uranium Mining Impact Statistics",
+  "keyStats": "Key Statistics",
+  "miningSites": {
+    "title": "Major Mining Sites",
+    "sites": [
+      {
+        "name": "Jaduguda",
+        "description": "India's first uranium mine, operational since 1967"
+      },
+      {
+        "name": "Narwapahar",
+        "description": "Highly productive underground mine operational since 1995"
+      },
+      {
+        "name": "Bhatin",
+        "description": "Smaller satellite mine near Jaduguda"
+      },
+      {
+        "name": "Turamdih",
+        "description": "Includes an underground mine and processing plant"
+      }
+    ]
+  },
+  "population": {
+    "title": "Affected Population",
+    "data": [
+      "Over 50,000 people living within 5km radius of mines",
+      "30+ villages directly impacted",
+      "Indigenous communities disproportionately affected"
+    ]
+  },
+  "healthIssues": {
+    "title": "Health Impacts",
+    "data": [
+      "Increased rates of congenital deformities (3-4x higher than national average)",
+      "Elevated cancer rates in mining areas",
+      "Higher incidence of respiratory diseases",
+      "Reports of sterility and miscarriages",
+      "Radiation levels in some villages 3-5x safe limits"
+    ]
+  }
+}
