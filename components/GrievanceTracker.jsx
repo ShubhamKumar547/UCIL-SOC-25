@@ -2,6 +2,7 @@
 import { useState } from "react";
 import env_en from "../public/locales/en/grievances.json";
 import env_hi from "../public/locales/hi/grievances.json";
+import comp_status from "../data/demo_grievance.json";
 import { useRouter } from "next/router";
 
 const GrievanceStatusChecker = () => {
@@ -9,11 +10,14 @@ const GrievanceStatusChecker = () => {
   const env_translation = { env_en, env_hi };
   const lang = locale === "hi" ? "env_hi" : "env_en";
   const t = env_translation[lang] || env_translation.en;
+  const complaint_status = comp_status;
+  // console.log(complaint_status);
 
   const data = t["grievanceStatusChecker"];
-  const grievanceData = t["grievances"];
-  console.log(t);
-  console.log(data);
+  const grievanceData = complaint_status["grievances_status"];
+  // console.log(t);
+  // console.log(data);
+  // console.log(grievanceData);
 
   const [grievanceId, setGrievanceId] = useState("");
   const [currentGrievance, setCurrentGrievance] = useState(null);
@@ -125,7 +129,7 @@ const GrievanceStatusChecker = () => {
             <h3 className="font-medium text-gray-700 dark:text-gray-300">
               {data.descriptionLabel}
             </h3>
-            <p className="text-gray-900 dark:text-white">
+            <p className="text-gray-900 break-words dark:text-white">
               {currentGrievance.description}
             </p>
           </div>
