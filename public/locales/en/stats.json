@@ -1,0 +1,42 @@
+{
+  "overview_titles": {
+    "title": "Uranium Mine Health Impact Dashboard",
+    "healthStats": "Health Statistics",
+    "complaints": "Common Health Complaints",
+    "population": "Affected Population",
+    "years": "Years",
+    "count": "Count",
+    "ageGroups": "Age Groups",
+    "respiratory": "Respiratory Issues",
+    "cancer": "Cancer Cases",
+    "birthDefects": "Birth Defects",
+    "skinConditions": "Skin Conditions",
+    "other": "Other",
+    "totalCases": "Total Cases",
+    "themeToggle": "Toggle Theme",
+    "languageToggle": "Toggle Language"
+  },
+  "data": {
+    "healthStats": {
+      "labels": ["2018", "2019", "2020", "2021", "2022"],
+      "respiratory": [120, 145, 160, 190, 210],
+      "cancer": [15, 18, 22, 25, 30],
+      "birthDefects": [8, 10, 12, 14, 16],
+      "skinConditions": [45, 50, 55, 60, 65]
+    },
+    "complaints": {
+      "labels": [
+        "Respiratory Issues",
+        "Cancer Cases",
+        "Birth Defects",
+        "Skin Conditions",
+        "Other"
+      ],
+      "data": [45, 20, 10, 15, 10]
+    },
+    "population": {
+      "labels": ["0-18", "19-35", "36-50", "51-65", "65+"],
+      "data": [120, 180, 150, 100, 50]
+    }
+  }
+}
