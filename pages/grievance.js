@@ -29,7 +29,7 @@ export default function GrievancePage() {
           <div className="mb-6">
             <GrievanceForm t={t} />
           </div>
-          <div className="w-[32%]">
+          <div className=" between-sm-md:w-[573px] md:w-[40%]">
             <GrievanceStatusChecker />
           </div>
         </div>

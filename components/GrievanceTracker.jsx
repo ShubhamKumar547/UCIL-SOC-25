@@ -57,7 +57,7 @@ const GrievanceStatusChecker = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl mx-auto box-border">
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg  box-border">
       <h2 className="text-xl font-bold text-amber-500 dark:text-amber-400 mb-6">
         {data.title}
       </h2>
