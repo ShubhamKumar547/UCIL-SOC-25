@@ -25,18 +25,5 @@
       "status": "pending",
       "description": "Job application status inquiry for local candidate"
     }
-  ],
-  "grievances_registered": [
-    {
-      "full_name": "",
-      "user_id":"",
-      "email-id": "",
-      "place": "",
-      "complaint_description": "",
-      "complaint_caegory": "",
-      "urgency": "",
-      "proof": "",
-      "date":""
-    }
   ]
 }

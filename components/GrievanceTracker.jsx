@@ -1,5 +1,5 @@
 // components/GrievanceStatusChecker.js
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import env_en from "../public/locales/en/grievances.json";
 import env_hi from "../public/locales/hi/grievances.json";
 import comp_status from "../data/demo_grievance.json";
@@ -13,8 +13,14 @@ const GrievanceStatusChecker = () => {
   const complaint_status = comp_status;
   // console.log(complaint_status);
 
+  const [grievanceData, setGrievanceData] = useState({});
+
   const data = t["grievanceStatusChecker"];
-  const grievanceData = complaint_status["grievances_status"];
+
+  useEffect(() => {
+    setGrievanceData(complaint_status["grievances_status"]);
+  }, [grievanceData]);
+
   // console.log(t);
   // console.log(data);
   // console.log(grievanceData);
