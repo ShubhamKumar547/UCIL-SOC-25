@@ -25,7 +25,7 @@ const NewsFeed = () => {
     <div className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300">
       <header className="bg-white dark:bg-gray-900 py-6 shadow-md">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-amber-500 dark:text-amber-400">
+          <h1 className="text-2xl font-semibold text-amber-500 dark:text-amber-400">
             {t.sectionTitle}
           </h1>
         </div>

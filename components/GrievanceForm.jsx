@@ -28,7 +28,7 @@ export default function GrievanceForm({ t }) {
 
   if (submitted) {
     return (
-      <div className=" bg-white min-h-screen flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900 box-border">
+      <div className=" bg-white min-h-screen flex flex-col items-center justify-center px-4  dark:bg-gray-900 box-border">
         <h2 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4 text-center">
           ✅ {t?.grievance_submitted || "Grievance Submitted!"}
         </h2>
@@ -47,7 +47,7 @@ export default function GrievanceForm({ t }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl mx-auto bg-gray-100 dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-lg w-full max-w-xl mx-auto space-y-6 border border-gray-200 dark:border-gray-700"
+      className="   bg-gray-100 dark:bg-gray-800 p-8 md:p-10 rounded-xl shadow-lg w-full max-w-xl mx-auto space-y-6 border border-gray-200 dark:border-gray-700"
     >
       <input
         type="text"
@@ -92,9 +92,7 @@ export default function GrievanceForm({ t }) {
         <option value="displacement">
           {t?.cat_displacement || "Displacement"}
         </option>
-        <option value="harassment">
-          {t?.cat_harassment || "Harassment"}
-        </option>
+        <option value="harassment">{t?.cat_harassment || "Harassment"}</option>
         <option value="academic">{t?.cat_academic || "Academic"}</option>
       </select>
       <select

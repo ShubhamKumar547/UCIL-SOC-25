@@ -25,11 +25,11 @@ export default function GrievancePage() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-top justify-center space-x-0 md:space-x-6 space-y-6 md:space-y-0 box-border">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 box-border">
           <div className="mb-6">
             <GrievanceForm t={t} />
           </div>
-          <div>
+          <div className="flex items-start justify-center">
             <GrievanceStatusChecker />
           </div>
         </div>
