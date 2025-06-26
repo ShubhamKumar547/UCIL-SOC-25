@@ -68,6 +68,8 @@ const UraniumMineDashboard = () => {
         },
       },
     },
+    maintainAspectRatio: true,
+    aspectRatio: 1,
     scales: {
       y: {
         ticks: {
@@ -102,7 +104,7 @@ const UraniumMineDashboard = () => {
             <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
               {t.healthStats}
             </h2>
-            <div className="h-80">
+            <div className="w-full h-80">
               <Bar
                 data={{
                   labels: dashboardData.healthStats.labels,
@@ -181,7 +183,7 @@ const UraniumMineDashboard = () => {
           <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
             {t.population}
           </h2>
-          <div className="h-96">
+          <div className="max-h-100">
             <Line
               data={{
                 labels: dashboardData.population.labels,
