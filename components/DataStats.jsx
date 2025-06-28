@@ -1,4 +1,3 @@
-// components/UraniumMineDashboard.js
 import React from "react";
 
 import { Bar, Pie, Line } from "react-chartjs-2";
