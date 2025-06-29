@@ -1,0 +1,30 @@
+{
+  "sectionTitle": "Stories of Impact",
+  "testimonials": [
+    {
+      "quote": "The UCIL Impact Portal made it easy for me to report the contaminated water issue in our village. Within days, officials visited and replaced the hand pump.",
+      "name": "Ramesh Munda",
+      "location": "Bhatin Village"
+    },
+    {
+      "quote": "We were facing frequent health issues. After raising a grievance through this portal, UCIL organized a free medical camp in our area.",
+      "name": "Sunita Devi",
+      "location": "Turamdih"
+    },
+    {
+      "quote": "For years, no one listened to our problems. But after using this portal, the district officer personally called us to understand the situation.",
+      "name": "Babli Soren",
+      "location": "Jaduguda"
+    },
+    {
+      "quote": "I reported our compensation delay through this platform. To my surprise, I received an official letter within 10 days.",
+      "name": "Mahesh Kumar",
+      "location": "Narwa Pahar"
+    },
+    {
+      "quote": "There was uranium waste leaking near our crops. With the portal, we submitted photos and a report. UCIL sent an inspection team immediately.",
+      "name": "Kiran Kisku",
+      "location": "Chatikocha"
+    }
+  ]
+}
