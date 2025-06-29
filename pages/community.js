@@ -6,6 +6,7 @@ import hi from "../public/locales/hi/common.json";
 import CommunityDemands from "@/components/Demands";
 import UraniumMineDashboard from "@/components/DataStats";
 import TestimonialCarousel from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 
 const community = () => {
   const translations = { en, hi };
@@ -26,6 +27,7 @@ const community = () => {
           <CommunityDemands />
           <UraniumMineDashboard />
         </div>
+        <Footer/>
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import en from "../public/locales/en/common.json";
 import hi from "../public/locales/hi/common.json";
 import GrievanceStatusChecker from "@/components/GrievanceTracker";
+import Footer from "@/components/Footer";
 
 const translations = { en, hi };
 
@@ -33,6 +34,7 @@ export default function GrievancePage() {
             <GrievanceStatusChecker />
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
