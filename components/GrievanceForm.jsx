@@ -37,7 +37,7 @@ export default function GrievanceForm({ t }) {
             "We will try to resolve your grievance as soon as possible."}{" "}
           {t?.grievance_id || "Your grievance ID is:"}{" "}
           <span className="text-blue-600 dark:text-blue-400 font-semibold">
-            UCIL-XYZ123
+            GRV-000003
           </span>
         </p>
       </div>
