@@ -10,6 +10,7 @@ import AboutUCIL from "@/components/AboutUs";
 import EnvironmentalStatsCards from "@/components/Environmental";
 import MiningStats from "@/components/ProjectStatistics"; 
 import NewsFeed from "@/components/NewsFeed"; 
+import Footer from "@/components/Footer";
 
 const translations = { en, hi };
 const rights_translation = { ren, rhi };
@@ -45,6 +46,7 @@ export default function Home() {
           <EnvironmentalRights t={rt} />
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
